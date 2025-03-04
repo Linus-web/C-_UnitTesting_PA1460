@@ -32,5 +32,5 @@ int Cat::getAge()
 
 std::string Cat::description() const
 {
-	return "| Name" + this->name + "\n| Color:" + this->color + "\n| Age:" + std::to_string(this->age);
+	return "| Name: " + this->name + "\n| Color: " + this->color + "\n| Age: " + std::to_string(this->age);
 } 
