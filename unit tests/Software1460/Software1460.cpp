@@ -2,10 +2,13 @@
 //
 
 #include <iostream>
-
+#include "../Software1460_lib/Cat.h"
 int main()
 {
-    std::cout << "Hello World!\n";
+    Cat bob(12, "Bob", "Black");
+
+    std::cout << "Hello "<<bob.getName();
+    std::cout << bob.getName() << " " << bob.description();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
