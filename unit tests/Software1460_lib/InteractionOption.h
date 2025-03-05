@@ -1,6 +1,8 @@
 #ifndef INTERACTION_OPTION_H
 #define INTERACTION_OPTION_H
 #include "InteractionType.h"
+#include <string>
+#include <iostream>
 
 class InteractionOption : public InteractionType {
 public:

@@ -11,7 +11,7 @@ public:
     }
 
 protected:
-    std::string interactionName;  // Interaction name is protected, so it's accessible by derived classes
+    std::string interactionName;
 };
 
 #endif // !INTERACTION_TYPE_H

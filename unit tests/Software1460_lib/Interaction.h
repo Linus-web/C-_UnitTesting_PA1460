@@ -1,8 +1,5 @@
 #ifndef INTERACTION_H
 #define INTERACTION_H
-#include <iostream>
-#include <vector>
-#include <string>
 #include "pch.h"
 class Interaction {
 public:
