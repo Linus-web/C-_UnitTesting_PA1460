@@ -21,7 +21,22 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="Cat.h">
+    <ClInclude Include="Game.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Scene.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Interaction.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InteractionType.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="InteractionOption.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
@@ -30,9 +45,6 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="pch.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="Cat.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

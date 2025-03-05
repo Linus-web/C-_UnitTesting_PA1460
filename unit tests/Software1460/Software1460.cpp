@@ -2,13 +2,38 @@
 //
 
 #include <iostream>
-#include "../Software1460_lib/Cat.h"
+#include "../Software1460_lib/Game.h"
+#include "../Software1460_lib/InteractionType.h"
+#include "../Software1460_lib/InteractionOption.h"
 int main()
 {
-    Cat bob(12, "Bob", "Black");
+    // Create game and scene
+    Game game;
+    Scene scene;
+    game.addScene(&scene);
 
-    std::cout << "Hello "<<bob.getName();
-    std::cout << bob.getName() << " " << bob.description();
+    // Create a GameObject
+    GameObject* obj = new GameObject("Hero");
+
+    // Create interactions
+    Interaction* attack = new InteractionType("Attack");
+    Interaction* pickUp = new InteractionOption("PickUp", "With Force");
+
+    // Add interactions to GameObject
+    obj->addInteraction(attack);
+    obj->addInteraction(pickUp);
+
+    // Add GameObject to the scene
+    scene.addObject(obj);
+
+    // Game starts
+    game.startGame();
+
+    // Perform interactions on the object
+    obj->performInteraction(0);  // Execute "Attack"
+    obj->performInteraction(1);  // Execute "PickUp with Force"
+
+    return 0;
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
