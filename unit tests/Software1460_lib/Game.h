@@ -6,9 +6,6 @@
 #include "pch.h"
 #include "Scene.h"
 
-class GameObject;
-class Interaction;
-
 // Game class manages the game state
 class Game {
 public:

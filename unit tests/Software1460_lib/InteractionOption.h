@@ -1,5 +1,6 @@
-#ifndef INTERACTION_OPTION_H
+#ifndef INTERACTION_OPTION_H  // Ensure this is at the very top
 #define INTERACTION_OPTION_H
+
 #include "InteractionType.h"
 #include <string>
 #include <iostream>
@@ -18,4 +19,4 @@ private:
     std::string optionName;
 };
 
-#endif // !INTERACTION_OPTION_H
+#endif // INTERACTION_OPTION_H
